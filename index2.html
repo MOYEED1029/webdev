@@ -1,0 +1,47 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Sticky Notes App</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="min-h-screen bg-gradient-to-br from-yellow-100 to-pink-200 p-6 font-sans">
+    <div class="max-w-4xl mx-auto">
+      <h1 class="text-4xl font-bold text-center mb-8">Sticky Notes</h1>
+
+      <!-- Search Bar -->
+      <div class="flex gap-4 mb-4">
+        <input
+          id="searchInput"
+          type="text"
+          placeholder="Search notes..."
+          class="w-full p-3 border border-gray-300 rounded-lg shadow-sm"
+        />
+      </div>
+
+      <!-- Input & Add Button -->
+      <div class="flex gap-4 mb-6">
+        <input
+          id="noteInput"
+          type="text"
+          placeholder="Write a note..."
+          class="w-full p-3 border border-gray-300 rounded-lg shadow-sm"
+        />
+        <button id="addBtn" class="bg-yellow-400 hover:bg-yellow-500 text-white px-4 py-2 rounded-lg shadow">
+          Add
+        </button>
+      </div>
+
+      <!-- Notes Grid -->
+      <div id="notesContainer" class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+        <!-- Notes will be inserted here -->
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
+
+
